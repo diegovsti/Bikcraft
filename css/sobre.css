@@ -1,0 +1,55 @@
+/*Introdução interna*/
+	.introducao-sobre
+	{
+		background: url("../img/bg-sobre.jpg") no-repeat center;
+		background-size: cover;
+	}
+/*introdução Interna*/
+
+/* Missão, Valores */
+	.missao-valores
+	{
+		width: 100%;
+		padding: 60px 0;
+
+	}
+
+	.missao-valores h2.historia
+	{
+		text-align: left;
+	}
+
+	.missao-valores h2.historia:after 
+	{
+		content: "";
+		display: block;
+		width: 65px;
+		height: 3px;
+		background: #000;
+		margin: 10px 0;
+	}
+/* Missão, Valores */
+
+/*História, e lista-valores*/
+	.historia-conteudo
+	{
+		padding: 0 30px;
+	}
+
+	.historia-conteudo p
+	{
+		width: 580px;
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 20px;
+		padding-right: 60px;
+	}
+
+	.lista-valores li
+	{
+		font-family: Georgia, "Times New Romam", serif;
+		font-size: 18px;
+		line-height: 30px;
+	}	
+/* História, lista-valores */
+

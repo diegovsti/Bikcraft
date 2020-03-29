@@ -1,0 +1,93 @@
+
+/*background da introdução da página*/
+	.introducao-portifolio
+	{
+		background: url("../img/bg-portifolio.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+/*Estilo dos comentarios dos clientes*/
+	.quotes_clientes{
+		padding: 60px 0;
+		max-width: 460px;
+		margin: 0 auto;
+	}
+
+	.quotes_clientes p{
+		text-align: center;
+		font-family: Georgia, "Times New Roman", serif;
+		font-size: 18px;
+		line-height: 25px;
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+
+	.quotes_clientes cite{
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: bold;
+		text-align: right;
+		float: right;
+		font-style: normal;
+	}
+
+/*Plugin slide*/
+	.rslides, .rslides_portifolio {
+	  position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	  }
+
+	.rslides li, .rslides_portifolio li {
+	  -webkit-backface-visibility: hidden;
+	  position: absolute;
+	  display: none;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	  }
+
+	.rslides li:first-child, .rslides_portifolio li:first-child {
+	  position: relative;
+	  display: block;
+	  float: left;
+	  }
+
+	.rslides img, .rslides_portifolio img {
+	  display: block;
+	  height: auto;
+	  width: 100%;
+	  border: 0;
+	  }
+
+
+/* Páginação dos slides */
+	  .rslides_tabs{
+	  	text-align: center;
+	  	margin-top: 20px;
+
+	  }
+
+	  .rslides_tabs li{
+	  		display: inline;
+	  		margin: 0 5px;
+	  }
+
+	 .rslides_tabs li a{
+	 		display: inline-block;
+	 		width: 14px;
+	 		height: 14px;
+	 		background: #1d1d1d;
+	 		color: #1d1d1d;
+	 		border-radius: 50%;
+	 		overflow: hidden;
+	 		text-indent: -200px;
+	 }
+
+  .rslides_tabs li.rslides_here a, .rslides_tabs li a:hover{
+	 	background: #fec63e;
+	 	color: #fec63e;
+ 	}

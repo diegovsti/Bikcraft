@@ -1,0 +1,1913 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+  html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*reset*/
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor tex-decoration
+ */ 
+
+a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+/*grid*/
+
+/*========== Geral, Before, After ========================*/
+	*, *:before, *:after {
+	  -webkit-box-sizing: border-box; 
+	  -moz-box-sizing: border-box; 
+	  box-sizing: border-box;
+	}
+/*========== Geral, Before, After ========================*/
+
+/*========== Container (grid) ========================*/
+	.container {
+		width: 960px;
+		margin: 0 auto;
+		padding: 0px;
+		position: relative;
+	}
+
+	.container:after, .container:before {
+		content: " ";
+		display: table;
+	}
+
+	.container:after {
+		clear: both;
+	}
+/*========== Container (grid) ========================*/
+
+/*========== Grids ========================*/
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+		float: left;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.grid-1 	{width: 40px;}
+	.grid-2 	{width: 100px;}
+	.grid-3 	{width: 160px;}
+	.grid-4 	{width: 220px;}
+	.grid-5 	{width: 280px;}
+	.grid-6 	{width: 340px;}
+	.grid-7 	{width: 400px;}
+	.grid-8 	{width: 460px;}
+	.grid-9 	{width: 520px;}
+	.grid-10 	{width: 580px;}
+	.grid-11 	{width: 640px;}
+	.grid-12 	{width: 700px;}
+	.grid-13 	{width: 760px;}
+	.grid-14 	{width: 820px;}
+	.grid-15 	{width: 880px;}
+	.grid-16 	{width: 940px;}
+	.grid-1-3	{width: 300px;}
+/*========== Grids ========================*/
+
+
+
+/*========== Media Query para tela de Tablet ========================*/
+	@media only screen and (min-width: 768px) and (max-width: 959px){
+
+		.container{
+			width: 768px;
+		}
+
+		.grid-1   {width: 28px;}
+		.grid-2   {width: 76px;}
+		.grid-3   {width: 124px;}
+		.grid-4   {width: 172px;}
+		.grid-5   {width: 220px;}
+		.grid-6   {width: 268px;}
+		.grid-7   {width: 316px;}
+		.grid-8   {width: 364px;}
+		.grid-9   {width: 412px;}
+		.grid-10  {width: 460px;}
+		.grid-11  {width: 508px;}
+		.grid-12  {width: 556px;}
+		.grid-13  {width: 604px;}
+		.grid-14  {width: 652px;}
+		.grid-15  {width: 700px;}
+		.grid-16  {width: 748px;}
+		.grid-1-3 {width: 236px;}
+	}
+/*========== Media Query para tela de Tablet ========================*/
+
+
+
+/*========== Media Query para tela de smartphone ========================*/
+	@media only screen and (max-width: 767px){
+
+		.container{
+			width: 300px;
+		}
+
+		.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3{
+
+			width: 300px;
+			margin: 0 0 20px 0;
+			float: none;
+		}
+	}
+/*========== Media Query para tela de smartphone ========================*/
+
+/*pagina sobre*/
+
+/*Introdução interna*/
+	.introducao-sobre
+	{
+		background: url("../img/bg-sobre.jpg") no-repeat center;
+		background-size: cover;
+	}
+/*introdução Interna*/
+
+/* Missão, Valores */
+	.missao-valores
+	{
+		width: 100%;
+		padding: 60px 0;
+
+	}
+
+	.missao-valores h2.historia
+	{
+		text-align: left;
+	}
+
+	.missao-valores h2.historia:after 
+	{
+		content: "";
+		display: block;
+		width: 65px;
+		height: 3px;
+		background: #000;
+		margin: 10px 0;
+	}
+/* Missão, Valores */
+
+/*História, e lista-valores*/
+	.historia-conteudo
+	{
+		padding: 0 30px;
+	}
+
+	.historia-conteudo p
+	{
+		width: 580px;
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 20px;
+		padding-right: 60px;
+	}
+
+	.lista-valores li
+	{
+		font-family: Georgia, "Times New Romam", serif;
+		font-size: 18px;
+		line-height: 30px;
+	}	
+/* História, lista-valores */
+
+/*pagina produtos*/
+
+/*parte referente ao estilo da página de produtos*/
+
+/*introdução da página*/
+	.introducao-produtos
+	{
+		width: 100%;
+		height: 160px;
+		background: url("../img/bg-produtos.jpg") no-repeat center;
+		background-size: cover;
+	}
+/*introdução da página*/
+
+
+/*item do produto*/
+	.produto_item
+	{
+		padding-top: 60px;
+
+	}
+
+	.produto_item h2{
+		font-size: 36px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		font-weight: bold;
+		position: relative;
+		top: -190px;
+		text-align: center;
+		color: #fff;
+		margin-bottom: -69px;
+	}
+
+	.produto_item h2:before, .produto_item h2:after
+	{
+		content: "";
+		display: block;
+		background: #fff;
+		width: 65px;
+		height: 3px;
+		margin: 10px auto;
+	}
+/*item do produto*/
+
+/*icone do produto*/
+	.produto_icone
+	{
+		background: #000;
+		padding: 70px 0;
+	}
+
+	.produto_icone img
+	{
+		margin: 0 auto;
+	}
+/*icone do produto*/
+
+/*informações do produto*/
+	.produto_info
+	{
+		background: #000;
+	}
+
+	.produto_info p
+	{
+		color: #fff;
+		font-size: 18px;
+		line-height: 25px;
+		padding: 13px 40px;
+	}
+
+	.produto_info ul li
+	{
+		background-color: #fec63e;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: bold;
+		letter-spacing: .1em;
+		float: left;
+		text-align: center;
+		width: 229px;
+		height: 50px;
+		padding: 15px 0;
+	}
+
+
+	.produto_info ul li:nth-child(1), .produto_info ul li:nth-child(2)
+	{
+		margin-bottom: 3px;
+	}
+	.produto_info ul li:nth-child(even)
+	{
+		margin-left: 2px;
+	}
+/*informações do produto*/
+
+
+/* seção de orçamento*/
+	section.orcamento{
+		background: #000;
+		width: 100%;
+		margin-top: 60px;
+		padding: 40px 0;
+	}
+/* seção de orçamento*/
+
+/*subtitulo de orçamento*/
+	.orcamento h2.subtitulo{
+		color: #fec63e;
+	}
+
+	.orcamento h2.subtitulo:after{
+		content: "";
+		display: block;
+		width: 65px;
+		height: 3px;
+		background: #fec63e;
+		margin: 10px auto;
+	}
+/*subtitulo de orçamento*/
+
+/*formulário*/
+	.form{
+		padding-right: 60px;
+	}
+
+	.form label{
+		display: block;
+		color: #fff;
+		font-size: 18px;
+		line-height: 25px;
+		font-family: Georgia, "Times New Roman", serif;
+		padding: 10px 0;
+		letter-spacing: .1em;
+	}
+
+	.form input{
+		display: block;
+		background: none;
+		border: 4px solid #fec63e;
+		width: 100%;
+		color: #fff;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: Georgia, "Times New Roman", serif;
+	}
+
+	textarea{
+		display: block;
+		background: none;
+		border: 4px solid #fec63e;
+		width: 100%;
+		height: 150px;
+		color: #fff;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: Georgia, "Times New Roman", serif;
+	}
+
+	.form button{
+		padding: 7px 40px;
+		background: none;
+	}
+/*formulário*/
+
+
+/*dados da empresa*/
+	.orcamento_dados{
+		color:#fff;
+	}
+	.orcamento_dados h3{
+		font-size: 24px;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: #fec63e;
+		font-weight: bold;
+		padding: 20px 0;
+	}
+	.orcamento_dados span{
+		display: block;
+		font-size: 18px;
+		line-height: 30px;
+		color: #fff;
+		font-family: Georgia, "Times New Roman", serif;
+	}
+
+	.dados_email{
+		margin-bottom: 40px;
+	}
+
+	.orcamento_dados ul{
+		padding-right: 60px;
+	}
+
+	.orcamento_dados ul li {
+		font-family: Georgia, "Times New Roman",serif;
+		font-size: 14px;
+		padding: 10px 15px;
+	}
+
+	.orcamento_dados p{
+		margin: 8px 0;
+	}
+
+	.orcamento_dados ul li:nth-child(odd){
+		background: #1d1d1d;
+	}
+/*dados da empresa*/
+
+
+/*pagina portifolio*/
+
+
+/*background da introdução da página*/
+	.introducao-portifolio
+	{
+		background: url("../img/bg-portifolio.jpg") no-repeat center;
+		background-size: cover;
+	}
+
+/*Estilo dos comentarios dos clientes*/
+	.quotes_clientes{
+		padding: 60px 0;
+		max-width: 460px;
+		margin: 0 auto;
+	}
+
+	.quotes_clientes p{
+		text-align: center;
+		font-family: Georgia, "Times New Roman", serif;
+		font-size: 18px;
+		line-height: 25px;
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+
+	.quotes_clientes cite{
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: bold;
+		text-align: right;
+		float: right;
+		font-style: normal;
+	}
+
+/*Plugin slide*/
+	.rslides, .rslides_portifolio {
+	  position: relative;
+	  list-style: none;
+	  overflow: hidden;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	  }
+
+	.rslides li, .rslides_portifolio li {
+	  -webkit-backface-visibility: hidden;
+	  position: absolute;
+	  display: none;
+	  width: 100%;
+	  left: 0;
+	  top: 0;
+	  }
+
+	.rslides li:first-child, .rslides_portifolio li:first-child {
+	  position: relative;
+	  display: block;
+	  float: left;
+	  }
+
+	.rslides img, .rslides_portifolio img {
+	  display: block;
+	  height: auto;
+	  width: 100%;
+	  border: 0;
+	  }
+
+
+/* Páginação dos slides */
+	  .rslides_tabs{
+	  	text-align: center;
+	  	margin-top: 20px;
+
+	  }
+
+	  .rslides_tabs li{
+	  		display: inline;
+	  		margin: 0 5px;
+	  }
+
+	 .rslides_tabs li a{
+	 		display: inline-block;
+	 		width: 14px;
+	 		height: 14px;
+	 		background: #1d1d1d;
+	 		color: #1d1d1d;
+	 		border-radius: 50%;
+	 		overflow: hidden;
+	 		text-indent: -200px;
+	 }
+
+  .rslides_tabs li.rslides_here a, .rslides_tabs li a:hover{
+	 	background: #fec63e;
+	 	color: #fec63e;
+ 	}
+/*pagina de contatos*/
+
+
+/*===== Introdução Background ==========*/
+	.introducao-contatos
+	{
+		background: url("../img/bg-contatos.jpg") no-repeat center;
+		background-size: cover;
+	}
+/*===== final Introdução Background   ==========*/
+
+
+/*===== Formulário para contatos  ==========*/
+	.contatos{
+		margin-top: 60px;
+		padding: 40px 0;
+	}
+
+	.form{
+		padding-right: 60px;
+	}
+
+	.form label{
+		display: block;
+		color: #fff;
+		font-size: 18px;
+		line-height: 25px;
+		font-family: Georgia, "Times New Roman", serif;
+		padding: 10px 0;
+		letter-spacing: .1em;
+	}
+
+		.form-contato label{
+		display: block;
+		color: #000;
+		font-size: 18px;
+		line-height: 25px;
+		font-family: Georgia, "Times New Roman", serif;
+		padding: 10px 0;
+		letter-spacing: .1em;
+	}
+
+	.form input{
+		display: block;
+		background: none;
+		border: 4px solid #fec63e;
+		width: 100%;
+		color: #fff;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: Georgia, "Times New Roman", serif;
+	}
+		.form-contato input{
+		display: block;
+		background: none;
+		border: 4px solid #fec63e;
+		width: 100%;
+		color: #000;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: Georgia, "Times New Roman", serif;
+	}
+
+	textarea{
+		display: block;
+		background: none;
+		border: 4px solid #fec63e;
+		width: 100%;
+		height: 150px;
+		color: #fff;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: Georgia, "Times New Roman", serif;
+	}
+
+	.form-contato 	textarea{
+		display: block;
+		background: none;
+		border: 4px solid #fec63e;
+		width: 100%;
+		height: 150px;
+		color: #000;
+		padding: 7px 10px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: Georgia, "Times New Roman", serif;
+	}
+
+	.form button{
+		padding: 7px 40px;
+		background: none;
+	}
+/*===== Final formulário Contatos=========*/
+
+
+
+/*===== Contatos da Bickraft ==========*/
+	.contatos_dados{
+		color:#000;
+	}
+
+	.contatos_dados h3{
+		font-size: 24px;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: #fec63e;
+		font-weight: bold;
+		padding: 20px 0;
+	}
+
+	.contatos_dados span{
+	display: block;
+	font-size: 18px;
+	line-height: 30px;
+	color: #000;
+	font-family: Georgia, "Times New Roman", serif;
+	}
+
+	.contatos_dados span:nth-of-type(even){
+		margin-bottom: 30px;
+	}
+/*======= Final contatos da Bickraft =======*/
+
+
+
+/*===== Redes Sociais  ==========*/
+	.contatos-redes:after{
+		content: "";
+		display: block;
+		width: 65px;
+		height: 3px;
+		background: #fec63e;
+
+	}
+
+	.contatos-redessociais li{
+		border: 3px solid #fec63e;
+		padding: 10px;
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	.contatos-redessociais li:hover{
+		border-color: #000;
+		transition: all .5s ease;
+	}
+/*===== final Redes Sociais  ==========*/
+
+
+
+/*===== Geolocalização =====*/
+	.map{
+		margin-bottom: 60px;
+	}
+/*===== Final Geolocalização ==========*/
+
+
+
+
+
+
+/*Geral*/
+	body{	font-family: Helvetica, Arial, sans-serif; }
+
+	p{
+		font-family: Georgia, "Times New Romam", serif;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	.btn{
+		border: 3px solid #fec63e;
+		padding: 10px 25px;
+		color: #fec63e;
+		font-size: 14px;
+		line-height: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: .1em;
+		transition: all .5s ease;
+	}
+
+	.btn:hover{
+		border-color: #fff;
+		color: #fff;
+	}
+
+	.btn.btn-preto:hover{
+		color: #000;
+		border-color: #000;
+		transition: all .5s ease;
+	}
+
+	.subtitulo{
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: bold;
+		text-align: center;
+		color: #000;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		margin-bottom: 40px;
+	}
+
+	.subtitulo:after{
+		content: "";
+		display: block;
+		width: 65px;
+		height: 3px;
+		background: #000;
+		margin: 10px auto;
+	}
+
+/*Formulário*/
+	.formphp label.nao-aparece, .formphp input.nao-aparece {
+		display: none !important;
+	}
+
+	#form-erro span, #form-send span  {
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	#form-send {
+		color: #31aa39;
+	}
+
+	#form-erro {
+		color: #f64540;
+	}
+
+
+/*Header*/
+	.header{
+		width: 100%;
+		background: #fec63e; /* Amarelo */
+		padding: 15px 0;
+		position: fixed;
+		top: 0;
+		z-index: 4;
+	}
+
+	.header_menu{
+		text-align: right;
+	}
+
+	.header_menu ul li{
+		display: inline-block;
+		margin-left: 25px;
+		margin-top: 20px;
+	}
+
+	.header_menu ul li a{
+		color: #000;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		padding: 12px 0;
+		transition: all .5s ease;
+	}
+
+	.header_menu ul li a:hover{
+		color: #fff;
+	}
+
+	.header_menu ul li a.menu_ativo{
+		color: #fff;
+	}
+
+	.logo{
+		width: 130px;
+	}
+
+/*Introdução do site*/
+
+	/*Introdução*/
+		.introducao {
+			 width: 100%;
+			 height: 355px;
+			 background: url("../img/bg.jpg") no-repeat center;
+			 background-size: cover;
+			 text-align: center;
+			 margin-top: 92px;
+			 padding-top: 80px;
+		}
+
+		.introducao h1{
+			font-size: 48px;
+			line-height: 60px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #fff;
+		}
+
+	/*Blockquote*/
+		.quote-externo{
+			max-width: 300px;
+			margin: 0 auto;
+			color: #fff;
+			margin-bottom: 40px;
+		}
+
+		.quote-externo p{
+			font-style: italic;
+		}
+
+		.quote-externo p:before, .quote-externo p:after{
+			content: "";
+			display: block;
+			width: 65px;
+			height: 3px;
+			background: #fff;
+			margin: 10px auto;
+		}
+
+		.quote-externo cite{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 14px;
+			letter-spacing: .1em;
+		}
+
+	/*Introdução interna*/
+		.introducao-interna{
+			width: 100%;
+			height: 160px;
+			margin-top: 92px;
+			background-size: cover;
+			color: #fff;
+			text-align: center;
+			padding-top: 30px;
+		}
+
+		.introducao-interna h1{
+			font-size: 36px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.introducao-interna h1:after{
+			content: "";
+			width: 65px;
+			height: 3px;
+			display: block;
+			background: #fff;
+			margin: 10px auto;
+		}
+
+		.introducao-interna p{
+
+		}
+
+/* Produtos*/
+	.produtos{
+		padding: 80px 0;
+	}
+
+	.produtos_lista li{
+		background-color: #fec63e;
+		text-align: center;
+	}
+
+	.produtos_lista li img{
+		margin: 0 auto;
+	}
+
+	.produtos_lista li h3{
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 20px;
+		letter-spacing: .1em;
+	}
+
+	.produtos_lista li h3:after{
+		content: "";
+		display: block;
+		width: 65px;
+		height: 3px;
+		background: #000;
+		margin: 2px auto;
+	}
+
+	.produtos_lista li p{
+		padding: 10px 20px 20px 20px;
+	}
+
+	.icone-produto{
+		background-color: #000;
+		padding: 30px;
+	}
+
+	.call{
+		text-align: center;
+		padding-top: 40px;
+		clear: both;
+	}
+
+	.call p{
+		margin-bottom: 20px;
+	}
+
+/*Portifólio*/
+	.portifolio{
+		background-color: #000;
+		width: 100%;
+		padding: 40px 0;
+	}
+
+	.portifolio .subtitulo{
+		color: #fec63e;
+	}
+
+	.portifolio .subtitulo:after{
+		background: #fec63e;
+	}
+
+	.portifolio_lista div:last-child{
+		padding-top:20px;
+	}
+
+	.portifolio .call .call-to{
+		color: #fff;
+	}
+
+/*Qualidade*/
+	.qualidade{
+		padding: 60px 0;
+	}
+
+	.qualidade img{
+		width: 220px;
+		margin: 0 auto;
+	}
+
+	.qualidade img.linhas{
+		width: 650px;
+		height: 85px;
+		margin-top: -45px;
+	}
+
+	.qualidade-lista{
+		padding-top: 2px;
+		overflow: hidden;
+	}
+
+	.qualidade-lista li{
+		text-align: center;
+		padding: 0 40px;
+	}
+
+	.qualidade-lista .conteudo-lista{
+		font-size: 14px;
+	}
+
+	.qualidade-lista li h3{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		margin-top: 15px;
+	}
+
+	.qualidade-lista li h3:after{
+		content: "";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background-color: #000;
+		margin: 10px auto;
+	}
+
+/*Quebra da Página*/
+	.quebra-pagina{
+		width: 100%;
+		height: 231px;
+		background: url("../img/imagem-quebra.jpg") no-repeat center;
+		background-size: cover;
+		text-align: center;
+		padding-top: 50px;
+	}
+
+	.quebra-pagina .quote-externo{
+		max-width: 400px;
+	}	
+
+/*Footer*/
+	.footer{
+		width: 100%;
+		height: 180px;
+		background-color: #000;
+	}
+
+	.footer h3{
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 25px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		margin-top: 15px;
+		color: #fec63e;
+	}
+
+	.footer h3:after{
+		content: "";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background-color: #fec63e;
+		margin: 10px 0;
+	}
+
+	.footer p{
+		color: #fff;
+	}
+
+
+	.lista-redessociaiis li {
+		border: 3px solid #fec63e;
+		padding: 10px;
+		display: inline-block;
+		margin: 0 5px;
+
+	}
+
+	.lista-redessociaiis li:hover{
+		border-color: #fff;
+		transition: all .6s ease;
+	}
+
+/*Direitos Autorais*/
+	.direitos-autorais{
+		width: 100%;
+		height: 60px;
+		background: #fec63e;
+	}
+
+	.direitos-autorais p{
+		color: #fff;
+		padding-top: 10px;
+	}
+
+	.lista-contatos li{
+		color: #fff;
+	}
+
+	.direitos-autorais p.autor{
+		text-align: right;
+	}
+
+	.autor a{
+		color:#fff;
+		text-decoration: none;
+		letter-spacing: 0.1em;
+	}
+
+	.autor a:hover{
+		color: #000;
+		font-style: italic;
+		text-shadow: 1px 1px 1px gray;
+	}
+
+
+/*Animações*/
+
+	.js .introducao h1, 
+	.js .introducao blockquote, 
+	.js .introducao .btn, 
+	.js .animar, 
+	.js .animar-interno, 
+	.js .introducao-interna h1, 
+	.js .introducao-interna p{
+		opacity: 0;
+	}
+
+	.animated {
+	  -webkit-animation-duration: 1s;
+	  -moz-animation-duration: 1s;
+	  -o-animation-duration: 1s;
+	  -ms-animation-duration: 1s;
+	  animation-duration: 1s;
+	  
+	  -webkit-animation-fill-mode: both;
+	  -moz-animation-fill-mode: both;
+	  -o-animation-fill-mode: both;
+	  -ms-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+
+	@-webkit-keyframes fadeInDown {
+	  from {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, -20px, 0);
+	    -moz-transform: translate3d(0, -20px, 0);
+	    -o-transform: translate3d(0, -20px, 0);
+	    -ms-transform: translate3d(0, -20px, 0);
+	    transform: translate3d(0, -20px, 0);
+	  }
+
+	  to {
+	    opacity: 1;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+	}
+
+	@keyframes fadeInDown {
+	  from {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, -20px, 0);
+	    transform: translate3d(0, -20px, 0);
+	  }
+
+	  to {
+	    opacity: 1;
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+	}
+
+	.fadeInDown {
+	  -webkit-animation-name: fadeInDown;
+	  animation-name: fadeInDown;
+	}
+
+
+	/*estilo do responsivo*/
+
+/*   Media Query para tela de Tablet  */
+	@media only screen and (min-width: 768px) and (max-width: 959px){
+
+		/*Qualidade*/
+			.qualidade img{
+				width: 190px;
+			}
+			.qualidade img.linhas{
+				width: 550px;
+			}
+
+			.qualidade-lista li{
+				padding: 0 8px;
+			}
+		/*Qualidade*/
+
+		/*Footer Lista Redes Sociais*/
+			.lista-redessociaiis li a img{
+				width: 26px;
+				height: 26px;
+			}
+
+			.lista-redessociaiis li{
+				padding: 6px;
+			}
+		/*Footer Lista Redes Sociais*/
+
+		/*prpdutos*/
+
+			.produto_item h2{
+				top: -150px;
+			}
+
+			.produto_icone{		
+				padding: 40px 0;
+			}
+			
+			.produto_info p{
+				font-size: 13px;
+				line-height: 20px;
+				height: 122px;
+			}
+
+			img.produto-2{
+				height: 225px;
+			}
+
+			.produto_info ul li{
+				font-size: 15px;
+				width: 181px;
+			}
+		/*Produtos*/
+
+		/*Sobre*/
+			.subtitulo .historia{
+				font-size: 20px;
+			}
+
+			.historia-conteudo p{
+				width: 440px;
+				font-size: 14px;
+				line-height: 25px;
+				padding-right: 35px;
+			}
+
+			.lista-valores li{
+				font-size: 14px;
+				line-height: 40px;
+			}
+		/*Sobre*/
+
+		/*portifolio*/
+			.quotes_clientes p{
+				width: 420px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		/*portifolio*/
+	}
+/*   Media Query para tela de Tablet */
+
+/*   Media Query para tela de smartphone  */
+	@media only screen and (max-width: 767px){
+
+  
+
+	/*Header*/
+		.header{
+			position: relative;	
+			padding-bottom: 0;
+		}
+
+		.header img{
+			margin: 0 auto 10px auto ; 
+		}
+
+		.header_menu{
+			text-align: center;	
+		}
+
+		.header_menu ul li{
+			margin: 5px;
+		}
+		
+		.header_menu ul li a{
+			border: 4px solid #000;
+			width: 136px;
+			display: block;
+		}
+
+		.header_menu ul li a.menu_ativo{
+			border-color: #fff;
+		}
+
+		.header_menu ul li a:hover{
+			border-color: #fff;	
+		}
+	/*Header*/
+
+	/*Introdução*/
+		.introducao{
+			margin-top: 0;
+			padding-top: 40px;
+			background: url("../img/bg-mobile.jpg") no-repeat center;
+			background-size: cover;
+		}
+		.introducao h1{
+				font-size: 36px;
+				line-height: 40px;
+		}
+	/*Introdução*/
+
+	/*Bloquote*/
+
+		.quote-externo{
+			margin-bottom: 30px;
+		}
+		.quote-externo p{
+			font-size: 12px;
+		}
+		
+		.quote-externo cite{
+			font-size: 12px;
+		}
+	/*Bloquote*/
+
+	/*Produtos*/
+		.produtos{
+			padding: 60px 0;
+		}
+	/*Produtos*/
+
+	/*Qualidade*/
+		.linhas {
+		visibility: hidden;
+		}
+	/*Qualidade*/
+
+	/*Call*/
+		.call{
+			padding-top: 10px;
+		}
+	/*Call*/
+
+	/*Botão*/
+		.btn{
+			padding: 10px 8px;
+			font-size: 12px;
+		}
+	/*Botão*/
+
+	/*Estilo Geral*/
+		/*Footer*/
+		.footer{
+			height: 450px;
+		}
+		.footer h3{
+			font-size: 15px;
+		}
+	/*Footer*/
+
+
+	/*Paragráfo do Footer*/
+		.footer p{
+			font-size: 15px;
+		}
+	/*Paragráfo do Footer*/
+
+	/*Redes Sociais*/
+
+		ul.lista-redessociaiis li{
+			margin-bottom: 10px;
+		}
+
+		.lista-redessociaiis li img{
+			width: 28px;
+			height: 28px;
+		}
+	/*Redes Sociais*/
+
+	/*Direitos Autorais*/
+		.direitos-autorais{
+			height: 80px;
+		}
+
+		.direitos-autorais ul li p{
+			font-size: 15px;
+			text-align: left;
+			margin-bottom: -20px;
+		}
+
+		.direitos-autorais p.autor{
+			text-align: left;
+		}
+	/*Direitos Autorais*/
+	
+	/*Final estilo geral*/
+
+	/*relativo a página sobre */
+
+		.introducao-interna{
+			margin-top: 0;		
+		}
+
+		.missao-valores .subtitulo{
+			font-size: 15px;
+		}
+
+		.missao-valores{
+			margin-left: -30px;
+			padding: 40px 0 20px 0;
+		}
+
+
+		.historia-conteudo{
+			width: 350px;
+		}
+
+		.historia-conteudo .subtitulo{
+			margin-bottom: 20px;
+		}
+
+		.historia-conteudo p{
+			width: 100%;
+			font-size: 14px;
+			line-height: 25px;
+			padding-right: 0;
+		}
+
+		.historia-conteudo ul li{
+				width: 100%;
+			font-size: 14px;
+			line-height: 25px;
+			padding-right: 0;
+		}
+	/*Final estilo pagina sobre*/
+
+
+	/*Produtos*/
+		.produto_item h2{
+			top: -100px;
+			font-size: 24px;
+			margin-bottom: -60px;
+		}
+
+		.produto_item img{
+			margin-top: -40px;
+		}
+
+		.produto_icone{		
+			padding: 40px 0;
+		}
+
+		.produto_icone img{
+			margin-top: auto;
+		}
+		
+		.produto_info p{
+			font-size: 12px;
+			line-height: 20px;
+			height: auto;
+		}
+
+		img.produto-2{
+			height: 225px;
+			margin-top: 20px;
+		}
+
+		.produto_info ul li{
+			font-size: 12px;
+			line-height: 20px;
+			padding-top: 16px;
+			width: 149px;
+		}
+	/*Produtos*/
+
+	/*Orçamento*/
+		.orcamento .form{
+			padding-right: 0px;
+		}
+
+		.orcamento_dados ul{
+			padding-right: 0px;
+		}
+
+		.orcamento_dados h3{
+			font-size: 20px;
+		}
+	/*Orçamento*/
+
+	/*relativo a página de produtos*/
+
+	/*final estilo pagina de produtos*/
+
+
+	/*portifolio*/
+		.quotes_clientes p{
+			width: 300px;
+			font-size: 12px;
+			line-height: 20px;
+		}
+	/*portifolio*/
+
+	/*contato*/
+		.form{
+			padding-right: 0;
+			margin-bottom: 40px;
+		}
+
+		.form1 label{
+			color: #000;
+		}
+
+		.form-contato label{
+			color: #000;
+		}
+	/*contato*/
+
+	}
+/*   Media Query para tela de smartphone */ 
